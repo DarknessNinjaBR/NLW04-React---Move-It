@@ -1,5 +1,6 @@
 import { Session } from 'inspector';
 import Head from 'next/head';
+import { ChallangeBox } from '../components/ChallangeBox';
 import { CompletedChallanges } from '../components/CompletedChallenges';
 import { Countdown } from '../components/Countdown';
 import { ExperienceBar } from "../components/ExperienceBar";
@@ -23,7 +24,7 @@ export default function Home() {
           <Countdown/>
         </div>
         <div>
-
+          <ChallangeBox/>
         </div>
       </section>
     </div>
