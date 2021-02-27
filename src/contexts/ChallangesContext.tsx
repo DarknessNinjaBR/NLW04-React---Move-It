@@ -37,13 +37,15 @@ export function ChallangesProvider({
     ...rest
 }
     : ChallangesProviderProps) {
-    const [level, setLevel] = useState(rest.level ?? 1);
-    const [currentExperience, setCurrentExperience] = useState(rest.currentExperience ?? 0);
-    const [completedChallanges, setChallangesCompleted] = useState(rest.completedChallanges ?? 0);
+        
+    const [level, setLevel] = useState(rest.level)
+    const [currentExperience, setCurrentExperience] = useState(rest.currentExperience)
+    const [completedChallanges, setChallangesCompleted] = useState(rest.completedChallanges)
+    const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(false)
+
 
     const [activeChallange, setActiveChallange] = useState(null);
 
-    const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(false);
 
     const experienceToNextLevel = Math.pow((level + 1) * 4,2)
 
